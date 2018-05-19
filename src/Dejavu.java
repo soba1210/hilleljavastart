@@ -14,6 +14,10 @@ public class Dejavu {
         System.out.println(Formulavstepen(19));
         // 7ое задание
         System.out.println(Sindvounouugol(45));
+        //8ое задание
+        System.out.println(TretiaStorona(3,4,90));
+        System.out.println(TretiaStorona(12,5,90));
+        System.out.println(TretiaStorona(15,16,180));
     }
 
         public static int symma2 ( int a, int b){
@@ -40,7 +44,10 @@ public class Dejavu {
         double O = Math.sin(2 * Math.toRadians(a));
         return O;
     }
-
+public static double TretiaStorona (double a, double b, double angle){
+            double O = Math.sqrt(Math.pow(a,2) + Math.pow(b,2) - 2*a*b*Math.cos(Math.toRadians(angle)));
+            return O;
+}
 
 
 }
