@@ -18,6 +18,10 @@ public class Dejavu {
         System.out.println(TretiaStorona(3,4,90));
         System.out.println(TretiaStorona(12,5,90));
         System.out.println(TretiaStorona(15,16,180));
+        PArnost(-2);
+        Stest(1.0,2.0);
+        Stest(2,7);
+        Promejutok(10000);
     }
 
         public static int symma2 ( int a, int b){
@@ -48,6 +52,38 @@ public static double TretiaStorona (double a, double b, double angle){
             double O = Math.sqrt(Math.pow(a,2) + Math.pow(b,2) - 2*a*b*Math.cos(Math.toRadians(angle)));
             return O;
 }
+//15 задача
+    public static void PArnost(int a){
+        int b = a%2;
+        if (b==0) {
+        System.out.println("Парное");
+        } else {
+            System.out.println("непарное");
+        }
+        }
+        public static void Stest (double a, double b){
+        if (a%2==0){
+            System.out.println("Площадь треугольника = " + a*b/2 );
+        } else {
+            System.out.println("Площадь прямоугольника = " + a*b );
+        }
+        }
+        public static void Promejutok(int A){
+        if (A >= 0 && A <10 ){
+            System.out.println("Попадает в [0,10)");
+        }else {
+            if (A >= 10 && A<100){
+                System.out.println("Попадает в [10,100)");
+            }else {
+                if (A >= 100 && A<1000){
+                    System.out.println("Попадает в [100,1000)");
+                }else {
+                    System.out.println("Не попадает ни в один промежуток");
+                }
+            }
+        }
+        }
+
+    }
 
 
-}
