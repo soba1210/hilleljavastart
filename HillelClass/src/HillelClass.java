@@ -23,7 +23,7 @@ public class HillelClass {
         Promejutok(10000);
         System.out.println(Bolwe(100));
 
-        try (Scanner op = new Scanner(System.in)) {
+        /*try (Scanner op = new Scanner(System.in)) {
             double L1, L2;
             int L3;
             System.out.println("Введите первое число!!!");
@@ -45,9 +45,32 @@ public class HillelClass {
                     }
                 }
             }
+        }*/
+        /*try (Scanner op = new Scanner(System.in)) {
+            int L1, L2;
+            System.out.println("Введите первое число!!!");
+            L1 = op.nextInt();
+            System.out.println("Введите второе число!!!");
+            L2 = op.nextInt();
+            if (L1>L2){
+                System.out.println(L1);
+            }else{
+                System.out.println(L2);
+            }
+    }*/
+        System.out.println(max(5, 5, 4));
+
+        try (Scanner kk = new Scanner(System.in)) {
+            int L1, L2, L3;
+            System.out.println("Введите первое число!!!");
+            L1 = kk.nextInt();
+            System.out.println("Введите второе число!!!");
+            L2 = kk.nextInt();
+            System.out.println("Введите третее число!!!");
+            L3 = kk.nextInt();
+            System.out.println(max(L1, L2, L3));
         }
     }
-
     public static int symma2(int a, int b) {
         int c = a + b;
         return c;
@@ -114,5 +137,17 @@ public class HillelClass {
 
     public static boolean Bolwe(int A) {
       return A > 10;
+        }
+
+        public static int max(int a, int b, int c){
+        if (a>=b && a>=c){
+            return a;
+        }else{
+            if (b>=c && b>=a){
+                return b;
+            }else{
+                return c;
+            }
+        }
         }
 }
