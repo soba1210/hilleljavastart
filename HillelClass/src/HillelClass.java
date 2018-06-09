@@ -60,7 +60,7 @@ public class HillelClass {
     }*/
         System.out.println(max(5, 5, 4));
 
-        try (Scanner kk = new Scanner(System.in)) {
+       /* try (Scanner kk = new Scanner(System.in)) {
             int L1, L2, L3;
             System.out.println("Введите первое число!!!");
             L1 = kk.nextInt();
@@ -69,8 +69,49 @@ public class HillelClass {
             System.out.println("Введите третее число!!!");
             L3 = kk.nextInt();
             System.out.println(max(L1, L2, L3));
-        }
-    }
+        }*/
+       /*try (Scanner sc2 = new Scanner(System.in)){
+           double L1,L2,L3;
+           System.out.println("Введите первое число!!!");
+           L1 = sc2.nextDouble();
+           System.out.println("Введите второе число!!!");
+           L2 = sc2.nextDouble();
+           System.out.println("Введите третее число!!!");
+           L3 = sc2.nextDouble();
+           System.out.println(L3+" "+L2+" "+L1);
+       }*/
+       /*try(Scanner sc2 = new Scanner(System.in)){
+           double L1;
+           System.out.println("Введите первое число!!!");
+           L1 = sc2.nextDouble();
+           while (L1>0&&L1<=20){
+               System.out.println("Я программист");
+               L1--;
+           }*/
+
+       /*try (Scanner sc2 = new Scanner(System.in)) {
+           int qwq = 1;
+           double L1;
+           do {
+               System.out.println("Введите " + (qwq++) +"ое число!");
+               L1 = sc2.nextDouble();
+           }
+           while (L1!=0);
+           System.out.println("До свидания!");
+           }*/
+       /*try (Scanner sc2 = new Scanner(System.in)){
+           int AaA, BbB;
+           AaA = sc2.nextInt();
+           BbB = sc2.nextInt();
+           int CcC=AaA;
+           for(;BbB-1>0;BbB--){
+               CcC = CcC*AaA;
+           }
+           System.out.println(CcC);
+       }*/
+
+       }
+
     public static int symma2(int a, int b) {
         int c = a + b;
         return c;
